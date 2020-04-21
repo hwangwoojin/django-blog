@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 import blog.views, portfolio.views
+from django.conf import settings
+from django.conf.urls.static import static
 
 urlpatterns = [
     # blog
@@ -27,4 +29,4 @@ urlpatterns = [
 
     # portfolio
     path('portfolio/', portfolio.views.portfolio, name="portfolio"),
-]
+]+ static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

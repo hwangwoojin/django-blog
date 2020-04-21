@@ -1,5 +1,11 @@
 # blog-django
 
+simple django blog
+
+## blog
+
 ![image](./image.png)
 
-simple django blog
+## portfolio
+
+![image](./image2.png)
